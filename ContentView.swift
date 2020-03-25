@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SampleApp
-//
-//  Created by 井上健志 on 2020/02/15.
-//  Copyright © 2020 井上健志. All rights reserved.
-//
 
 import SwiftUI
 
