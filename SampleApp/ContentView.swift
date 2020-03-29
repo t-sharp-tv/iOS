@@ -1,19 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showText = false
     var body: some View {
-        var showDetails = true
-        return VStack{
-            Button(action: {
-                showDetails.toggle()
-            }) {
-                Text("詳細表示")
+        VStack{
+            Toggle(isOn: $showText){
+                Text("テキストを表示する")
             }
-            
-            if showDetails {
+            if showText{
                 Text("詳しくはWebで！")
-                    .font(.largeTitle)
-                    .lineLimit(nil)
+            }else{
+                Text("・・・")
             }
         }
     }
